@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="CitiesListError">Unable to retrieve cities list</string>
+    <string name="CityWeatherError">Unable to retrieve city weather</string>
+    <string name="CelsiusFahrenheit">\u2103 | \u2109</string>
+
+</resources>

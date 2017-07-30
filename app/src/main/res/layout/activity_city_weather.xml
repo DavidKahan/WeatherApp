@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <ProgressBar
+        android:id="@+id/activity_city_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+    <LinearLayout
+        android:id="@+id/weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="50sp"
+            tools:text="city name" />
+
+        <TextView
+            android:id="@+id/weather_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            tools:text="weather description" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/current_weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/current_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="40sp"
+            tools:text="current temperature" />
+
+
+        <TextView
+            android:id="@+id/low_high_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            tools:text="today's low and high temperature" />
+
+        <Button
+            android:id="@+id/celsius_fahrenheit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/CelsiusFahrenheit"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
